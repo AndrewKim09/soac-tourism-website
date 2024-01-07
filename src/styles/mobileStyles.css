@@ -1,0 +1,526 @@
+@media screen and (max-width: 375px){
+
+    .topBar{
+      left: 24px;
+      right: 24px;
+      top: 24px;
+  
+      .logo{
+        background-image: url("../../assets/shared/logo.svg");
+        background-size: contain;
+    
+        height:40px;
+        width: 40px;
+      }
+    
+      .menuIcon{
+        background-image: url("../../assets/shared/icon-hamburger.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 0;
+        top: 0;
+
+        order: 3;
+
+        justify-self: end;
+  
+        z-index: 2;
+    
+        height: 21px;
+        width: 24px;
+    
+        border: none;
+        background-color: transparent;
+      }
+  
+      .menuIcon:has(input:checked){
+        background-image: url("../../assets/shared/icon-close.svg");
+      }
+  
+      .menuLogoToggle, .menuDivToggle{
+        display: none;
+      }
+  
+      .menuContainer{
+        position: fixed;
+        backdrop-filter: blur(40px);
+        background: rgba(255, 255, 255, 0.04);
+  
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+  
+        transition: left 0.5s ease-in-out;
+  
+        .menuItemsContainer{
+  
+          font-size: 16px;
+          width: 100%;
+          height: auto;
+  
+          margin-left: 32px;
+          margin-top: 118px;
+  
+          .menuItem{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+  
+            margin-top: 32px;
+  
+            height: 31px;
+          }
+  
+          .menuItem{
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2.7px;
+  
+            span{
+              font-family: var(--barlow-condensed-font);
+              font-weight: bold;
+              letter-spacing: 2.7px;
+            }
+          }
+        }
+  
+        #menuItemText1{
+          span{
+            margin-right: 11px;
+          }
+  
+        }
+  
+        #menuItemText2{
+          span{
+            margin-right: 14px;
+          }
+        }
+  
+        #menuItemText3, #menuItemText4{
+          span{
+            margin-right: 12px;
+          }
+        }
+  
+  
+        
+      }
+  
+      .menuContainer:has(input:checked){
+        left: 121px;
+  
+        .menuSelector{
+          display: block;
+        }
+  
+        .menuSelector.hidden{
+          display: none;
+        }
+      }
+  
+      .menuSelector{
+        position: fixed;
+  
+        display:none;
+  
+        right: 0;
+        height: 31px;
+        width: 4px;
+        
+        background-color: white;
+      }
+      
+    }
+  
+  
+  
+    .title{
+      display: flex;
+      font-family: var(--barlow-condensed-font);
+      color: #FFFFFF;
+      font-size: 16px;
+      letter-spacing: 2.7px;
+      
+      justify-content: center;
+      margin-top: 88px;
+  
+      span:first-child{
+        opacity: 25%;
+        font-weight: bold;
+        margin-right: 18px;
+  
+      }
+    }
+  
+  
+    .homeBody{
+      background-image: url("../../assets/home/background-home-mobile.jpg");
+      .homeText{
+        width: 327px;
+        height: 276px;
+  
+        margin: auto;
+  
+        margin-top: 112px;
+      }
+  
+      .textCondensed, .textBarlow{
+        color: var(--subTextColor);
+  
+        text-align: center;
+      }
+  
+      .textCondensed{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+      }
+  
+      .textBarlow{
+        font-size: 15px;
+        line-height: 25px;
+      }
+  
+      .textBellefair{
+        color: var(--titleColor);
+  
+        text-align: center;
+  
+        font-size: 80px;
+  
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+  
+      button{
+  
+        height: 150px;
+        width: 150px;
+  
+        border-radius: 50%;
+        border: none;
+  
+        background-color: (#979797);
+        color: var(--black);
+  
+        font-size: 20px;
+        letter-spacing: 1.25px;
+        font-family: var(--bellefair-font);
+  
+        margin-right: 112px;
+        margin-left: 113px;
+        margin-top: 81px;
+        margin-bottom: 48px;
+  
+  
+  
+        
+        
+      }
+    }
+  
+    .destinationBody{
+      background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  
+      overflow: auto;
+  
+
+      .imageContainer{
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 26px;
+        
+        background-size: contain;
+        height: 170px;
+        width: 170px;
+      }
+      
+      .planetsContainer{
+        width: 235px;
+        height: 28px;
+        font-family: var(--barlow-condensed-font);
+  
+        p{
+          font-size: 14px;
+          letter-spacing: 2.36px;
+  
+          span{
+            margin-right: 27px;
+          }
+        }
+  
+        .planetSelector{
+          width: 36px;
+  
+          transition: left 0.5s ease-in-out;
+        }
+      }
+  
+      .planetInfo{
+        padding-bottom: 32px;
+        width: 327px;
+        .planetText{
+          font-family: var(--bellefair-font);
+          font-size: 56px;
+  
+          margin: auto;
+          margin-top: 20px;
+  
+          text-align: center;
+  
+        }
+  
+        p:nth-child(2){
+          font-family: var(--barlow-font);
+          line-height: 25px;
+  
+          color: var(--subTextColor);
+  
+          text-align: center;
+          height: 125px;
+          width: 327px;
+  
+          margin: auto;
+        }
+  
+  
+      }
+  
+      .planetStats{
+        margin-bottom: 58px;
+        font-weight: regular;
+        p:first-child{
+          margin-top: 32px;
+          margin-bottom: 12px;
+          font-family: var(--barlow-condensed-font);
+          color: var(--subTextColor);
+  
+          font-size: 14px;
+  
+          letter-spacing: 2.36px;
+        }
+  
+        p:nth-child(2){
+  
+          margin: 0;
+          font-family: var(--bellefair-font);
+          color: white;
+          font-size: 28px;
+        }
+  
+      }
+    }
+  
+    .destinationBody:has(input[value="1"]:checked){
+      .planetSelector{
+        left: 0;
+      }
+    }
+    
+    
+    .destinationBody:has(input[value="2"]:checked){
+      .planetSelector{
+        left: 61.5px;
+      }
+    }
+    
+    .destinationBody:has(input[value="3"]:checked){
+      .planetSelector{
+        left: 130px;
+      }
+    }
+    
+    .destinationBody:has(input[value="4"]:checked){
+      .planetSelector{
+        left: 204px;
+      }
+    }
+  
+    .crewBody{
+      background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  
+      .title{
+        align-items: center;
+        margin-top: 88px;
+  
+        font-size: 16px;
+  
+        span:first-child{
+          margin-right: 16px;
+        }
+      }
+
+      .horizontalFlex{
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .mobileImageContainer{
+        
+        width: 327px;
+        height: 223px;
+        margin: auto;
+        margin-top: 32px;
+        order: 1;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+  
+        border-bottom: 1px #383B4B solid;
+      }
+
+      .imageContainer{
+        display: none;
+      }
+  
+      .imageTogglesContainer{
+        margin-top: 32px;
+  
+        .imageToggle{
+          margin-right: 16px;
+  
+          height: 10px;
+          width: 10px;
+        }
+        input{
+          display: none;
+        }
+      }
+  
+      .crewInfo{
+        .crewRole{
+          text-align: center;
+          font-size: 16px;
+  
+          margin-top: 32px;
+          margin-bottom: 0;
+        }
+  
+        .crewName{
+          font-size: 24px;
+  
+          margin-top: 8px;
+          margin-bottom: 16px;
+  
+          line-height: 1;
+        }
+  
+        .crewBio{
+          width: 327px;
+          font-size: 15px;
+  
+          margin-top: 16px;
+          margin-bottom: 32px;
+  
+          line-height: 25px;
+        }
+      }
+    }
+
+    .crewBody:has(input[value="1"]:checked){
+      .mobileImageContainer{
+        background-image: url("../../assets/crew/image-douglas-hurley.png");
+      }
+    
+      .imageToggle[value="1"]{
+        background-color: white;
+      }
+    }
+    
+    .crewBody:has(input[value="2"]:checked){
+      .mobileImageContainer{
+        background-image: url("../../assets/crew/image-mark-shuttleworth.png");
+      }
+    
+      .imageToggle[value="2"]{
+        background-color: white;
+      }
+    }
+    
+    .crewBody:has(input[value="3"]:checked){
+      .mobileImageContainer{
+        background-image: url("../../assets/crew/image-victor-glover.png");
+      }
+    
+      .imageToggle[value="3"]{
+        background-color: white;
+      }
+    }
+    
+    .crewBody:has(input[value="4"]:checked){
+      .mobileImageContainer{
+        background-image: url("../../assets/crew/image-anousheh-ansari.png");
+      }
+    
+      .imageToggle[value="4"]{
+        background-color: white;
+      }
+    }
+  
+    .technologyBody{
+      background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  
+      .title{
+        margin-top: 88px;
+        margin-left: 100px;
+  
+        font-size: 16px;
+  
+        span:first-child{
+          margin-right: 16px;
+        }
+      }
+  
+      .imageContainer{
+        height: 170px;
+        margin-top: 32px;
+      }
+  
+      .imageToggleContainer{
+  
+        .imageToggle{
+          height: 40px;
+          width: 40px;
+  
+          border-radius: 50%;
+          margin-top: 34px;
+          margin-right: 16px;
+        }
+      }
+  
+      .technologyInfo{
+        margin-top: 26px;
+        p:first-child{
+          font-size: 14px;
+  
+          letter-spacing: 2.36px;
+          margin-bottom: 16px;
+        
+        }
+      }
+  
+      .location{
+        font-size: 24px;
+  
+        margin-bottom: 16px;
+        margin-top: 0;
+      }
+  
+      .description{
+        width: 327px;
+        line-height: 25px;
+  
+        margin: auto;
+        
+        text-align: center;
+        font-size: 15px;
+        font-family: var(--barlow-font);
+  
+        color: var(--subTextColor)
+      }
+    }
+  }

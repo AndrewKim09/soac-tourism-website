@@ -1,0 +1,462 @@
+@media screen and (min-width: 769px){
+    #root, .App, .body{
+        min-width: 979px;
+    }
+
+    .title{
+        margin-top: 23.5vh;
+        margin-left: 11.5vw;
+
+        letter-spacing: 4.72px;
+        font-size: 28px;
+        
+        span:first-child{
+            margin-right: 24px;
+        }
+    }
+
+    .topBar{
+        height: 96px;
+
+        top: 40px;
+        left: 55px;
+        right: 0;
+
+        .desktopLine{
+            position: fixed;
+            height: 1px;
+            background-color: #979797;
+            opacity: 25%;
+
+            left: 11.5vw;
+            right: 55vw;
+            z-index: 2;
+        }
+
+        .logo{
+            height: 48px;
+            width: 48px;
+          }
+      
+          input[type="checkbox"]{
+            display: none;
+          }
+      
+          .menuItemsContainer{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 48px;
+      
+            width: 57.5vw;
+            min-width: 840px;
+            height: 96px;
+      
+            background-color: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(10px);
+            -webkit-text-stroke-color: #979797;
+            color: white;
+      
+            .menuItem{
+              display: grid;
+              flex-direction: column;
+              justify-content: center;
+              
+              font-size: 14px;
+              letter-spacing: 2.36px;
+      
+              .menuItemText{
+                display: flex;
+                
+                align-items: end;
+                margin-top: 10px;
+              }
+      
+              .menuSelector{
+                display: block;
+                height: 3px;
+                width: 100%;
+      
+                background-color: white;
+      
+                align-self: end;
+                justify-self: center;
+              }
+      
+              .menuSelector.hidden{
+                background-color: transparent;
+              }
+      
+            }
+      
+            span{
+              color: var(--titleColor);
+              font-weight: bold;
+              
+              margin-right: 12px;
+            }
+
+            .menuItem:first-child{
+                margin-left: 123px;
+            }
+
+            .menuItem:last-child{
+                margin-right: 167px;
+            }
+
+            
+          }
+    }
+
+    .homeBody{
+        background-image: url('../../assets/home/background-home-desktop.jpg');
+        .homeText{
+            position: absolute;
+
+            top: 387px;
+            left: 14vw;
+            right: 63vw;
+            min-width: 440px;
+
+            .textCondensed{
+                font-size: 28px;
+                letter-spacing: 4.72px;
+            }
+
+            .textBellefair{
+                font-size: 150px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+            .textBarlow{
+                font-size: 18px;
+                line-height: 32px;
+                text-align: start;
+            }
+        }
+
+        button{
+            position: absolute;
+
+            bottom: 9%;
+            right: 11.5%;
+            top: 55%;
+            left: 69%;
+
+            aspect-ratio: 1/1;
+
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .destinationBody{
+        background-image: url('../../assets/destination/background-destination-desktop.jpg');
+        
+        .horizontalFlex{
+            margin-top: 97px;
+            display: flex;
+            height: 472px;
+
+            margin-left: 16vw;
+            
+
+            .imageContainer{
+                display: inline-block;
+                height: 445px;
+                width: 445px;
+                margin: 0;
+
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .infoBox{
+                margin-left: 11%;
+                display: flex;
+                flex-direction: column;
+                width: 445px;
+                text-align: start;
+                
+                .planetsContainer{
+                    margin: 0;
+                    width: 285.5px;
+                    height: 34px;
+                    text-align: start;
+
+                    span{
+                        letter-spacing: 2.7px;
+                    }
+
+                    .planetSelector{
+                        width: 41px;
+                    }
+                }
+        
+                .planetInfo{
+                    margin: 0;
+                    margin-top: 37px;
+                    padding-bottom: 54px;
+                    p{
+                        text-align: start;
+                    }
+
+                    p:first-child{
+                        font-size: 100px;
+                    }
+
+                    p:nth-child(2){
+                        font-size: 18px;
+                        line-height: 32px;
+
+                        margin-top: 14px;
+                    }
+                }
+
+                .planetStats{
+                    justify-content:  start;
+
+                    div{
+                        margin-right: 5vw;
+                        p:first-child{
+                            font-size: 14px;
+                            letter-spacing: 2.36px;
+                        }
+
+                        p:nth-child(2){
+                            font-size: 28px;
+                            margin:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .destinationBody:has(input[value="1"]:checked){
+        .planetSelector{
+          left: 0;
+        }
+      }
+      
+      
+      .destinationBody:has(input[value="2"]:checked){
+        .planetSelector{
+          left: 72.5px;
+        }
+      }
+      
+      .destinationBody:has(input[value="3"]:checked){
+        .planetSelector{
+          left: 155.5px;
+        }
+      }
+      
+      .destinationBody:has(input[value="4"]:checked){
+        .planetSelector{
+          left: 240.5px;
+        }
+      }
+
+    .crewBody{
+        background-image: url('../../assets/crew/background-crew-desktop.jpg');
+
+        .title{
+            margin-left: 0;
+        }
+
+        .horizontalFlex{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            width: 100%;
+
+            .imageContainer{
+                position: fixed;
+                order: 2;
+                bottom: 0;
+
+                align-self: end;
+            }
+
+            .verticalFlex{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-left: 11.5%;
+
+                .imageTogglesContainer{
+                    justify-content: space-between;
+                    order: 2;
+                    margin: 0;
+                    margin-top: 13.3vh;
+
+                    width: 132px;
+                    height: 15px;
+
+                    .imageToggle{
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+
+                .crewInfo{
+                    margin-top: 17vh;
+                    p{
+                        text-align: start;
+                    }
+
+                    .crewRole{
+                        font-size: 32px;
+                        margin: 0;
+                    }
+
+                    .crewName{
+                        font-size: 56px;
+                        margin: 0;
+                        margin-top: 16px;
+
+                        line-height: 1;
+                    }
+
+                    .crewBio{
+                        width: 444px;
+                        height: 17.8vh;
+                        margin: 0;
+                        margin-top: 27px;
+
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+    .crewBody:has(input[value="1"]:checked){
+        .imageContainer{
+            right: 9.5vw;
+            left: 51vw;
+            top: 22vh;
+        }
+    }
+
+    .crewBody:has(input[value="2"]:checked){
+        .imageContainer{
+            right: 13vw;
+            left: 55.5vw;
+            top: 27.3vh;
+        }
+    }
+
+    .crewBody:has(input[value="3"]:checked){
+        .imageContainer{
+            right: 10vw;
+            left: 51.5vw;
+            top: 27.3vh;
+            bottom: -10vh;
+        }
+    }
+
+    .crewBody:has(input[value="4"]:checked){
+        .imageContainer{
+            right: 6vw;
+            left: 51vw;
+            top: 32.5vh;
+        }
+    }
+
+    .technologyBody{
+        background-image: url('../../assets/technology/background-technology-desktop.jpg');
+    
+        .imageContainer{
+            width: auto;
+            position: fixed;
+            right: 0;
+            top: 30vh;
+            bottom: 11.2vh;
+            left: 64.5vw;
+
+            background-size: contain;
+            background-position: right center;
+            background-repeat: no-repeat;
+        }
+
+        .horizontalFlex{
+            width: auto;
+            position: fixed;
+            left: 11.5vw;
+            right: 44vw;
+            top: 42.5vh;
+            bottom: 24vh;
+
+            display: flex;
+
+            .imageToggleContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                margin-right: 5.5vw;
+
+                .imageToggle{
+                    width: 5.5vw;
+                    aspect-ratio: 1/1;
+
+                    max-height: 80px;
+                    max-width: 80px;
+
+                    font-size: 32px;
+                }
+            }
+
+            .technologyInfo{
+                p{
+                    text-align: start;
+                }
+
+                p:first-child{
+                    font-size: 16px;
+                    letter-spacing: 2.7px;
+
+                    margin:0;
+                }
+
+                .location{
+                    font-size: 56px;
+                    margin: 0;
+
+                    margin-top: 11px;
+                }
+
+                .description{
+                    margin: 0;
+                    margin-top: 17px;
+                    font-size: 18px;
+                    line-height: 32px;
+                    max-width: 444px;
+                }
+            }
+        }
+    }
+
+    .technologyBody:has(input[value="1"]:checked){
+        .imageContainer{
+            background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+        }
+    }
+
+    .technologyBody:has(input[value="2"]:checked){
+        .imageContainer{
+            background-image: url("../../assets/technology/image-spaceport-portrait.jpg");
+        }
+    }
+
+    .technologyBody:has(input[value="3"]:checked){
+        .imageContainer{
+            background-image: url("../../assets/technology/image-space-capsule-portrait.jpg");
+        }
+    }
+}

@@ -1,0 +1,431 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=League+Spartan:wght@700&display=swap');
+
+
+:root{
+  --bellefair-font: 'Bellefair', serif;
+  --barlow-font: 'Barlow', sans-serif;
+  --barlow-condensed-font: 'Barlow Condensed', sans-serif;
+
+  --subTextColor: #D0D6F9;
+  --titleColor: white;
+  --black: #0B0D17
+}
+
+.textBellefair{
+  font-family: var(--bellefair-font);
+}
+
+.textBarlow{
+  font-family: var(--barlow-font);
+}
+
+.textCondensed{
+  font-family: var(--barlow-condensed-font);
+}
+
+#root, html, body, .App{
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+  width: 100%;
+  line-height: 1;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.topBar{
+
+  position:fixed;
+  top: 0;
+  right: 0;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1;
+
+  .logo{
+    background-image: url("../../assets/shared/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .menuItem{
+    font-family: var(--barlow-condensed-font);
+
+    .menuSelector.hidden{
+      display: none;
+    }
+  }
+
+  .menuItem:hover{
+    cursor: pointer;
+  }
+}
+
+.title{
+  font-family: var(--barlow-condensed-font);
+  color: white;
+
+  span:first-child{
+    opacity: 25%;
+  }
+
+  span:nth-child(2){
+    opacity: 100%;
+  }
+}
+
+.body{
+  min-height: 100vh;
+  overflow: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.homeBody{
+  .textCondensed{
+    font-family: var(--barlow-condensed-font);
+    color: var(--subTextColor);
+    text-align: center;
+  }
+
+  .textBellefair{
+    font-family: var(--bellefair-font);
+    color: var(--titleColor);
+    text-align: center;
+  }
+
+  .textBarlow{
+    font-family: var(--barlow-font);
+    color: var(--subTextColor);
+    text-align: center;
+  }
+
+  button{
+    border-radius: 50%;
+
+    background-color: white;
+    color: black;
+    font-family: var(--bellefair-font);
+    letter-spacing: 2px;
+
+    display: block;
+    margin: auto;
+  }
+
+  button:hover{
+    cursor: pointer;
+  
+  }
+}
+
+.destinationBody{
+
+  .imageContainer{
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+  }
+
+  .planetsContainer{
+    position: relative;
+    color: var(--subTextColor);
+    font-family: var(--barlow-condensed-font);
+
+    margin: auto;
+    span:hover{
+      cursor: pointer;
+    }
+    p{
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input{
+      display: none;
+    }
+
+    .planetSelector{
+      position: absolute;
+      bottom: 0;
+      height: 3px;
+      background-color: white;
+
+      transition: left 0.5s ease-in-out;
+    }
+  }
+
+  .planetInfo{
+    border-bottom: 1px solid #383B4B;
+    margin: auto;
+    .planetText{
+      color: white;
+      font-family: var(--bellefair-font);
+
+      text-align: center;
+      margin: 0;
+
+    }
+
+    p:nth-child(2){
+      color: var(--subTextColor);
+      font-family: var(--barlow-font);
+
+      text-align: center;
+      margin: 0;
+    }
+
+  }
+
+  .planetStats{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    div{
+
+      p:first-child{
+        font-family: var(--barlow-condensed-font);
+        color: var(--subTextColor);
+      }
+
+      p:nth-child(2){
+        font-family: var(--bellefair-font);
+        color: white;
+      }
+    }
+  }
+}
+
+.destinationBody:has(input[value="1"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/destination/image-moon.webp")
+  }
+
+  span:first-child{
+    color: white;
+  }
+}
+
+
+.destinationBody:has(input[value="2"]:checked){
+
+  .imageContainer{
+    background-image: url("../../assets/destination/image-mars.webp")
+  }
+
+  span:nth-child(2){
+    color: white;
+  }
+}
+
+.destinationBody:has(input[value="3"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/destination/image-europa.webp")
+  }
+
+  span:nth-child(3){
+    color: white;
+  }
+}
+
+.destinationBody:has(input[value="4"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/destination/image-titan.webp")
+  }
+
+  span:nth-child(4){
+    color: white;
+  }
+}
+
+.crewBody{
+  .imageContainer{
+    background-image: url("../../assets/crew/image-douglas-hurley.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+
+  .imageTogglesContainer{
+    display: flex;
+    margin: auto;
+
+    justify-content: center;
+
+
+    .imageToggle{
+      font-family: var(--bellefair-font);
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: transparent;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.356);
+      background-color: #979797;
+
+      border-radius: 50%;
+
+      input{
+        display: none;
+      }
+    }
+  }
+
+  .crewInfo{
+    .crewRole{
+      font-family: var(--bellefair-font);
+      color: white;
+      opacity: 49.51%;
+    }
+
+    .crewName{
+      text-align: center;
+      color: white;
+      font-family: var(--bellefair-font);
+    }
+
+    .crewBio{
+      margin: auto;
+      text-align: center;
+
+      color: var(--subTextColor);
+      font-family: var(--barlow-font);
+    }
+  }
+}
+
+.crewBody:has(input[value="1"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/crew/image-douglas-hurley.png");
+  }
+
+  .imageToggle[value="1"]{
+    background-color: white;
+  }
+}
+
+.crewBody:has(input[value="2"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/crew/image-mark-shuttleworth.png");
+  }
+
+  .imageToggle[value="2"]{
+    background-color: white;
+  }
+}
+
+.crewBody:has(input[value="3"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/crew/image-victor-glover.png");
+  }
+
+  .imageToggle[value="3"]{
+    background-color: white;
+  }
+}
+
+.crewBody:has(input[value="4"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/crew/image-anousheh-ansari.png");
+  }
+
+  .imageToggle[value="4"]{
+    background-color: white;
+  }
+}
+
+.technologyBody{
+  overflow: auto;
+
+  .imageContainer{
+    width: 100%;
+
+    background-image: url("../../assets/technology/image-launch-vehicle-landscape.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .imageToggleContainer{
+    display: flex;
+    justify-content: center;
+
+    .imageToggle{
+      font-family: var(--bellefair-font);
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      background-color: transparent;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.356);
+
+      input{
+        display: none;
+      }
+    }
+  }
+
+  .technologyInfo{
+    text-align: center;
+    color: white;
+    font-family: var(--bellefair-font);
+    p:first-child{
+      font-family: var(--barlow-condensed-font);
+      color: var(--subTextColor);
+    }
+
+    .description{
+      font-family: var(--barlow-font);
+      color: var(--subTextColor);
+    
+    }
+  }
+}
+
+.technologyBody:has(input[value="1"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/technology/image-launch-vehicle-landscape.jpg");
+  }
+  .imageToggle[value="1"]{
+    background-color: white;
+    color: var(--black);
+  }
+}
+
+.technologyBody:has(input[value="2"]:checked){
+  .imageContainer{
+    background-image: url("../../assets/technology/image-spaceport-landscape.jpg");
+  }
+  .imageToggle[value="2"]{
+    background-color: white;
+    color: var(--black);
+  }
+}
+
+.technologyBody:has(input[value="3"]:checked){
+
+  .imageContainer{
+    background-image: url("../../assets/technology/image-space-capsule-landscape.jpg");
+  }
+  .imageToggle[value="3"]{
+    background-color: white;
+    color: var(--black);
+  }
+}
