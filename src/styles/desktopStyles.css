@@ -111,6 +111,7 @@
         background-image: url('../../assets/home/background-home-desktop.jpg');
         .homeText{
             position: absolute;
+            
 
             top: 387px;
             left: 14vw;
@@ -120,12 +121,14 @@
             .textCondensed{
                 font-size: 28px;
                 letter-spacing: 4.72px;
+                text-align: start;
             }
 
             .textBellefair{
                 font-size: 150px;
                 margin-top: 24px;
                 margin-bottom: 24px;
+                text-align: start;
             }
 
             .textBarlow{
