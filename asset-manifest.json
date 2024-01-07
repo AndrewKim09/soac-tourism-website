@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/soac-tourism-website/static/css/main.b015791c.css",
+    "main.css": "/soac-tourism-website/static/css/main.1091a113.css",
     "main.js": "/soac-tourism-website/static/js/main.65afe268.js",
     "static/media/image-victor-glover.png": "/soac-tourism-website/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/soac-tourism-website/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
@@ -30,11 +30,11 @@
     "static/media/logo.svg": "/soac-tourism-website/static/media/logo.565f7f2c0534403f11b7.svg",
     "static/media/icon-close.svg": "/soac-tourism-website/static/media/icon-close.d47fda63cbd8b3fedbbc.svg",
     "static/media/icon-hamburger.svg": "/soac-tourism-website/static/media/icon-hamburger.5273efa7c50e96ef3e51.svg",
-    "main.b015791c.css.map": "/soac-tourism-website/static/css/main.b015791c.css.map",
+    "main.1091a113.css.map": "/soac-tourism-website/static/css/main.1091a113.css.map",
     "main.65afe268.js.map": "/soac-tourism-website/static/js/main.65afe268.js.map"
   },
   "entrypoints": [
-    "static/css/main.b015791c.css",
+    "static/css/main.1091a113.css",
     "static/js/main.65afe268.js"
   ]
 }
