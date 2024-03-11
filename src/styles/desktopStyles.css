@@ -280,6 +280,7 @@
                 position: fixed;
                 order: 2;
                 bottom: 0;
+                height: 80vh;
 
                 align-self: end;
             }
@@ -360,6 +361,7 @@
             left: 51.5vw;
             top: 27.3vh;
             bottom: -10vh;
+            
         }
     }
 

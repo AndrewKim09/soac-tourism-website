@@ -11,6 +11,7 @@ export const Crew = () => {
 
         $(document).ready(function() {
             $("#imageToggle1").children().attr("checked", true)
+            console.log($("#imageToggle1").children().attr("checked"))
 
             $(".imageToggle").each(function() {
                 $(this).unbind("click")

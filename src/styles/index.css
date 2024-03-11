@@ -210,7 +210,7 @@ code {
 
 .destinationBody:has(input[value="1"]:checked){
   .imageContainer{
-    background-image: url("../../assets/destination/image-moon.webp")
+    background-image: url("../../assets/destination/image-moon.png")
   }
 
   span:first-child{
@@ -222,7 +222,7 @@ code {
 .destinationBody:has(input[value="2"]:checked){
 
   .imageContainer{
-    background-image: url("../../assets/destination/image-mars.webp")
+    background-image: url("../../assets/destination/image-mars.png")
   }
 
   span:nth-child(2){
@@ -232,7 +232,7 @@ code {
 
 .destinationBody:has(input[value="3"]:checked){
   .imageContainer{
-    background-image: url("../../assets/destination/image-europa.webp")
+    background-image: url("../../assets/destination/image-europa.png")
   }
 
   span:nth-child(3){
@@ -242,7 +242,7 @@ code {
 
 .destinationBody:has(input[value="4"]:checked){
   .imageContainer{
-    background-image: url("../../assets/destination/image-titan.webp")
+    background-image: url("../../assets/destination/image-titan.png")
   }
 
   span:nth-child(4){
