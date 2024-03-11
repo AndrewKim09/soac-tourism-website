@@ -1,4 +1,5 @@
 # Frontend Mentor - Space tourism website
+check it out https://andrewkim09.github.io/soac-tourism-website/
 
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
 
